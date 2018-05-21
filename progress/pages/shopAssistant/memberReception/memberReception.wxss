@@ -17,7 +17,6 @@
   border-radius:4px;
   width:80px;
   height:80px;
-  margin-right:20rpx;
 }
 .imgbox view{
   text-align:center;
@@ -28,10 +27,114 @@
 }
 .snap{
   display: flex;
-  margin-top: 40rpx;
+  margin: 40rpx 0;
 }
 .userPic{
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   padding: 20rpx;
+}
+.title text{
+  font-size: 34rpx;
+  color: #5a79ff;
+  line-height: 70rpx;
+}
+.memInfo{
+  display: flex;
+  border: 1px solid #f0f0f0;
+  padding: 20rpx 10rpx;
+  border-radius: 4px;
+  margin-bottom: 30rpx;
+}
+.memInfo view{
+  flex: 1;
+  font-size: 30rpx;
+}
+.select_box{
+  background: #fff;
+  width: 50%;
+  position: relative;
+}
+.select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.select_text{
+  font-size: 30rpx;
+  flex: 1;
+}
+.select_img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select_img_rotate{
+  transform:rotate(180deg); 
+}
+.option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+.select_box image{
+  height: 10px;
+}
+.followGood{
+  display: flex;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 50rpx 0 50rpx 60rpx;
+}
+.goodimg image{
+  width:100px;
+  height: 60px;
+}
+.goodimg{
+  display: flex;
+  flex-direction: column;
+}
+.addara{
+  width:100px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addgoods,.goodimg{
+  flex: 1;
+}
+.addgoods,.goodimg text{
+  font-size: 30rpx;
+  color: #666;
+}
+.addara image{
+  width: 30px;
+  height: 30px;
+}
+.finished{
+  background-color: #5a79ff;
+}
+.cancled{
+  background-color: #ff5a5a;
 }

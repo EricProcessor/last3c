@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
 	"appid": "wx23510e4356af83d9",
-	"projectname": "3c",
+	"projectname": "last3c",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -60,6 +60,12 @@
 					"id": -1,
 					"name": "接待",
 					"pathName": "pages/shopAssistant/memberReception/memberReception",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/shopAssistant/memdetail/memdetail",
 					"query": ""
 				}
 			]

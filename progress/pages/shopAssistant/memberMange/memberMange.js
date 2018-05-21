@@ -6,7 +6,7 @@ Page({
    */ 
   data: {
     navbar: ['会员入店', '回头客入店', '信息查询', '立即注册'],
-    currentTab: 0
+    currentTab: 1
   },
   navbarTap: function (e) {
     this.setData({

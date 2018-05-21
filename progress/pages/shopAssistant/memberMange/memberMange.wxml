@@ -69,7 +69,7 @@
     </view>
 </view>
 <view class='shopContent' hidden="{{currentTab!==1}}">
-回头客入店
+
 </view>
 <view class='shopContent' hidden="{{currentTab!==2}}">
 信息查询

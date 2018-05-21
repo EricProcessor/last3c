@@ -68,7 +68,7 @@ Page({
    */
   data: {
     navbar: ['客群', '关注度', '业绩','排名'],
-    currentTab: 0 ,
+    currentTab:0,
     dateOpt: ['日','周','月'],
     currentDate: 0, 
     /*下拉框  控制下拉列表的显示隐藏，false隐藏、true显示*/

@@ -1,2 +1,86 @@
 <!--pages/shopAssistant/memdetail/memdetail.wxml-->
-<text>pages/shopAssistant/memdetail/memdetail.wxml</text>
+<!--pages/shopAssistant/memberReception/memberReception.wxml-->
+<view class='shopContent'>
+    <view class='userPic'>
+        <view class='usericon'>
+            <image src='/img/regis.png'></image>
+            <text>用户注册人脸</text>
+        </view>
+        <view class='snap'>
+          <view class="imgbox">         
+            <image src="/img/regis.png"></image>
+            <view>抓拍人脸1</view>
+          </view>
+          <view class="imgbox">
+            <image src="/img/regis.png"></image>
+            <view>抓拍人脸2</view>
+          </view>
+          <view class="imgbox">
+            <image src="/img/regis.png"></image>
+            <view>抓拍人脸3</view>
+          </view>
+        </view>
+    </view>
+    <view class='title'>
+        <text>基本信息</text>
+    </view>
+    <view class='memInfo'>
+        <view>姓名(必填)</view>
+        <view>吴迪</view>
+    </view>
+    <view class='memInfo'>
+        <view>电话(必填)</view>
+        <view>13000990909</view>
+    </view>
+    <view class='memInfo'>
+        <view>会员等级(必填)</view>
+        <!-- 下拉框 -->
+ <view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='/img/gobottom.png'></image>         
+    </view>
+    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    </view>
+</view> 
+        <!-- 下拉框end -->
+    </view>
+    <view class='memInfo'>
+        <view>注册店名</view>
+        <view>京东之家总部店</view>
+    </view>
+    <view class='memInfo'>
+        <view>会员地址</view>
+        <view>北京市朝阳区芍药居北里</view>
+    </view>
+    <view class='memInfo'>
+        <view>会员卡号</view>
+        <view>00998809</view>
+    </view>
+    <view class='memInfo'>
+        <view>客户经理</view>
+        <view>张三</view>
+    </view>
+    <view class='memInfo'>
+        <view>到访次数</view>
+        <view>188次</view>
+    </view>
+    <view class='title'>
+        <text>关注商品</text>
+    </view>
+    <view class='followGood'>
+        <view class='addgoods'>
+            <view class='addara'>
+                <image src='/img/addimg.png'></image>
+            </view>
+            <text>添加商品</text>
+        </view> 
+        <view class='goodimg'>
+            <image src='/img/Desert.jpg'></image>
+            <text>2018-05-01 08:33:00</text>
+            <text>关注商品:一片沙漠</text>
+        </view> 
+    </view>
+</view>
+
