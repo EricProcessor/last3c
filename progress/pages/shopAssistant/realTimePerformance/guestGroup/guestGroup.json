@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText" : "门店助手",
+  "usingComponents": {
+    "ec-canvas": "../../../../ec-canvas/ec-canvas"
+  }
+}

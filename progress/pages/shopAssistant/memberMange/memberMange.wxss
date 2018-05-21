@@ -1,0 +1,146 @@
+/* pages/shopAssistant/memberMange/memberMange.wxss */
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+  padding: 0 20rpx;
+  margin-top:10rpx;
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;
+  border: 1px solid #5a79ff; 
+  color: #5a79ff; 
+}
+.navbar .item:first-child{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+} 
+.navbar .item:last-child{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+} 
+.navbar .item.active{  
+  color: #FFF;  
+  background-color: #5a79ff;
+}
+.bottomnav{
+  flex: none;  
+  display: flex;  
+  background: #fff; 
+  box-shadow: 0px -4px 3px rgba(0, 0, 0, .1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+.bottomnav .item{
+  height: 98rpx;
+  flex: 1;
+  text-align: center;
+  padding-top: 10rpx;
+}  
+.bottomnav .item image{
+  width: 56rpx;
+  height: 46rpx;
+  display: block;
+  margin: 0 auto;
+}
+.bottomnav .item text{
+  font-size: 24rpx;
+  color: #b1b1b1;
+}
+.bottomnav .item text.active{
+  color: #5a79ff;
+}
+/* .navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: #FFCC00;  
+} */
+.shopContent{
+  padding: 0 20rpx;
+  margin-top: 60rpx;
+  margin-bottom:180rpx;
+}
+.memberList .title image{
+  width: 24px;
+  height: 20px;
+  vertical-align: middle;
+}
+.memberList .title{
+  margin-bottom: 30rpx;
+}
+.memberList .title text{
+  font-size: 34rpx;
+  padding-left: 20rpx;
+}
+.picbox{
+  display: flex;
+}
+.picbox image{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  width: 80px;
+  height: 80px;
+  margin-right: 20rpx;
+}
+.picbox .imgbox view{
+  text-align: center;
+  font-size: 34rpx;
+  color: #666;
+  border-bottom: 4px solid #f0f0f0;
+}
+.picbox .imgbox{
+  margin-right: 25rpx;
+}
+.btngroup view{
+  font-size: 34rpx;
+  line-height: 80rpx;
+  width: 200rpx;
+  text-align: center;
+}
+/* .reception,memdetail{
+  
+} */
+.reception{
+  background-color: #5a79ff;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 30rpx;
+  box-shadow:2px 1px 3px 3px rgba(90,121,255, .3);
+}
+.memdetail{
+  color: #5a79ff;
+  border-radius: 4px;
+  box-shadow:2px 1px 3px 3px rgba(0, 0, 0, .1);
+}
+.memberList .timeInfo{
+  font-size: 34rpx;
+  color: #666;
+  padding: 10rpx 0;
+}
+.memberList{
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 20rpx;  
+  margin-bottom: 30rpx;
+}
+.memberList .btngroup .recevied{
+background-color:#c1c1c1;
+color:#fff;
+border-radius:4px;
+margin-bottom:30rpx;
+box-shadow:2px 1px 3px 3px rgba(193,193,193, .3);
+
+}
+.memberList .btngroup .receptionist{
+  color: #c1c1c1;
+}

@@ -1,0 +1,23 @@
+<!--pages/shopAssistant/memberReception/memberReception.wxml-->
+<view class='shopContent'>
+    <view class='userPic'>
+        <view class='usericon'>
+            <image src='/img/regis.png'></image>
+            <text>用户注册人脸</text>
+        </view>
+        <view class='snap'>
+          <view class="imgbox">
+            <image src="/img/regis.png"></image>
+            <view>抓拍人脸1</view>
+          </view>
+          <view class="imgbox">
+            <image src="/img/regis.png"></image>
+            <view>抓拍人脸2</view>
+          </view>
+          <view class="imgbox">
+            <image src="/img/regis.png"></image>
+            <view>抓拍人脸3</view>
+          </view>
+        </view>
+    </view>
+</view>

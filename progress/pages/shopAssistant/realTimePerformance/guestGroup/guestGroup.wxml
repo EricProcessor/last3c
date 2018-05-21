@@ -1,0 +1,353 @@
+<!--pages/shopAssistant/realTimePerformance/guestGroup/guestGroup.wxml-->
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+  
+<!--客群-->  
+<view class='shopContent' hidden="{{currentTab!==0}}">
+    <view class="dateOpt">
+        <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+    </view>  
+   <view class='guestDetail'>
+      <view class='detail'>
+        <view class='gender'>
+          <text class='male'>男性</text>
+          <text class='num'>676</text>
+          <text>22%</text>  
+        </view>
+        <view class='gender'>
+          <text class='famale'>女性</text>
+          <text class='num'>1428</text>
+          <text>2%</text>  
+        </view>
+      </view>
+      <view class='detail'>
+          <view class='title'>
+            <text class='member'>会员到访</text>
+          </view>
+          <view>
+            <text class='num'>1428</text>
+            <text>2%</text>
+          </view>
+      </view>
+   </view>
+   <view class='guestDetail'>
+      <view class='detail'>
+          <view class='title'>
+            <text class='member'>新到访客</text>
+          </view>
+          <view>
+            <text class='num'>1428</text>
+            <text>2%</text>
+          </view>
+      </view>
+      <view class='detail'>
+          <view class='title'>
+            <text class='member'>回头客到访</text>
+          </view>
+          <view>
+            <text class='num'>148</text>
+            <text>2%</text>
+          </view>
+      </view>
+   </view>
+   <view class='agecontent'>
+      <view class='agedistribution'>
+          <view class='title'>
+            <text>年龄分布</text>
+            <view class='icon-group'>
+                <text class='icon-male'></text>
+                <text>男</text>
+                <text class='icon-famale'></text>
+                <text>女</text>
+            </view>
+          </view>
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+      <view class='procomponent'>   
+        <view class='protitle'>
+            <text>20岁以下</text>
+            <text>350人</text>
+        </view>
+        <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+        </view>  
+      </view>
+   </view>
+</view>  
+  
+<!--关注度-->  
+<view class='shopContent' hidden="{{currentTab!==1}}">  
+  <view class="dateOpt">
+    <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+  </view>
+  <!-- 选框 -->
+  <view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='/img/gobottom.png'></image>         
+    </view>
+    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    </view>
+  </view>
+  <view class='followBox'>
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+      <view class='followCont'>
+         <view class='title'>
+            <text>二手专区</text>
+         </view> 
+         <view class='followNum'>
+            <text>关注人数800</text>  
+         </view>
+         <view class='followNum followTime'>
+            <text>关注总时长700min</text> 
+         </view>
+         <view>
+         </view> 
+         <view class='progresscount'>
+            <view class='promale'></view>
+            <view class='profamale'></view>
+         </view>
+         <view class='Proportion'>
+              <text>40%男</text>
+              <text>60%女</text>
+         </view>
+      </view>  
+  </view>
+</view>  
+  
+<!--业绩-->  
+<view class='shopContent' hidden="{{currentTab!==2}}">  
+  <view class="dateOpt">
+    <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+  </view>
+  <view class='echatBox'>
+    <text>订单转换率</text>
+    <view class="ccontainer">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view> 
+  </view>
+  <view class='echatBox'>
+    <text>月销售额</text>
+    <view class="ccontainer">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view> 
+  </view>
+</view> 
+
+<!--排名-->  
+<view class='shopContent' hidden="{{currentTab!==3}}">  
+  <view class="dateOpt">
+    <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+  </view>
+  <view class='ranking'>
+      <text>我的店铺排名</text>
+      <scroll-view  scroll-x class="scroll-header">
+          <view class="table">
+            <view class="thead">
+              <view class="th">店铺名</view>
+              <view class="th">客流量</view>
+              <view class="th ">会员量</view>
+              <view class="th ">客单价</view>
+              <view class="th ">订单转化率</view>
+              <view class="th ">销售额</view>
+            </view>
+            <block wx:for="{{listData}}" wx:key="{{code}}">
+              <view class="tr">
+                <view class="td">{{item.name}}</view>
+                <view class="td">{{item.guest}}</view>
+                <view class="td">{{item.member}}</view>
+                <view class="td">{{item.price}}</view>
+                <view class="td">{{item.order}}</view>
+                <view class="td">{{item.sale}}</view>
+              </view>
+            </block>
+          </view>
+      </scroll-view>
+  </view>
+  <view class='ranking'>
+      <text>店铺排名</text>
+      <scroll-view  scroll-x class="scroll-header">
+          <view class="table">
+            <view class="thead">
+              <view class="th">店铺名</view>
+              <view class="th">客流量</view>
+              <view class="th ">会员量</view>
+              <view class="th ">客单价</view>
+              <view class="th ">订单转化率</view>
+              <view class="th ">销售额</view>
+            </view>
+            <block wx:for="{{listData}}" wx:key="{{code}}">
+              <view class="tr">
+                <view class="td">{{item.name}}</view>
+                <view class="td">{{item.guest}}</view>
+                <view class="td">{{item.member}}</view>
+                <view class="td">{{item.price}}</view>
+                <view class="td">{{item.order}}</view>
+                <view class="td">{{item.sale}}</view>
+              </view>
+            </block>
+          </view>
+      </scroll-view>
+  </view>
+</view> 
+<!-- 底部导航 -->
+<view class='bottomnav'>
+    <view class='item'>
+        <image src='/img/realtimesel.png'></image>
+        <text class='active'>实时业绩</text>
+    </view>
+    <view class='item' bindtap='memberTab'>
+        <image src='/img/member.png'></image>
+        <text>会员管理</text>
+    </view>
+    <view class='item'>
+        <image src='/img/myshop.png'></image>
+        <text>我的店铺</text>
+    </view>
+</view>

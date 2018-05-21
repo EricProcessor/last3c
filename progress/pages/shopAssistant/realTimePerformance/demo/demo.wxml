@@ -1,0 +1,31 @@
+<scroll-view scroll-x class="scroll-header">
+<view id="green" class="scroll-view-item bc_green"></view>
+<view id="red" class="scroll-view-item bc_red"></view>
+<view id="yellow" class="scroll-view-item bc_yellow"></view>
+<view id="blue" class="scroll-view-item bc_blue"></view>
+<view id="blue" class="scroll-view-item bc_blue"></view>
+<view id="blue" class="scroll-view-item bc_blue"></view>
+<view id="blue" class="scroll-view-item bc_blue"></view>
+<view id="blue" class="scroll-view-item bc_blue"></view>
+</scroll-view>
+<scroll-view  scroll-x class="scroll-header">
+<view class="table">
+  <view class="tr">
+    <view class="th">head1</view>
+    <view class="th">head2</view>
+    <view class="th ">head3</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+  </block>
+</view>
+</scroll-view>

@@ -1,0 +1,94 @@
+<!--pages/shopAssistant/memberMange/memberMange.wxml-->
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+<view class='shopContent' hidden="{{currentTab!==0}}">
+    <view class='memberList'>
+        <view class='title'>
+            <image src='/img/normalmem.png'></image>
+            <text>普通会员</text>
+        </view>
+        <view class='picbox'>
+            <view class='imgbox'>
+                <image src='/img/regis.png'></image>
+                <view>抓拍人脸</view>
+            </view>
+            <view  class='imgbox'>
+                <image src='/img/regis.png'></image>
+                <view>注册人脸</view>
+            </view>
+            <view class='btngroup'>
+                 <view class='reception' bindtap='memreception'>接待</view>
+                 <view class='memdetail' bindtap='memdetail'>会员详情</view>
+            </view>
+        </view>
+        <view class='timeInfo'>抓拍时间：2018-05-21 02：45：00</view>
+    </view>
+    <view class='memberList'>
+        <view class='title'>
+            <image src='/img/vipmem.png'></image>
+            <text>高级会员</text>
+        </view>
+        <view class='picbox'>
+            <view class='imgbox'>
+                <image src='/img/regis.png'></image>
+                <view>抓拍人脸</view>
+            </view>
+            <view  class='imgbox'>
+                <image src='/img/regis.png'></image>
+                <view>注册人脸</view>
+            </view>
+            <view class='btngroup'>
+                 <view class='recevied'>已接待</view>
+                 <view class='receptionist'>接待人:店员A</view>
+                 <view class='memdetail'>会员详情</view>
+            </view>
+        </view>
+        <view class='timeInfo'>抓拍时间：2018-05-21 02：45：00</view>
+    </view>
+    <view class='memberList'>
+        <view class='title'>
+            <image src='/img/normalmem.png'></image>
+            <text>普通会员</text>
+        </view>
+        <view class='picbox'>
+            <view class='imgbox'>
+                <image src='/img/regis.png'></image>
+                <view>抓拍人脸</view>
+            </view>
+            <view  class='imgbox'>
+                <image src='/img/regis.png'></image>
+                <view>注册人脸</view>
+            </view>
+            <view class='btngroup'>
+                 <view class='reception'>接待</view>
+                 <view class='memdetail'>会员详情</view>
+            </view>
+        </view>
+        <view class='timeInfo'>抓拍时间：2018-05-21 02：45：00</view>
+    </view>
+</view>
+<view class='shopContent' hidden="{{currentTab!==1}}">
+回头客入店
+</view>
+<view class='shopContent' hidden="{{currentTab!==2}}">
+信息查询
+</view>
+<view class='shopContent' hidden="{{currentTab!==3}}">
+立即注册
+</view>
+<!-- 底部导航 -->
+<view class='bottomnav'>
+    <view class='item'  bindtap='reltimeTab'>
+        <image src='/img/realtime.png'></image>
+        <text>实时业绩</text>
+    </view>
+    <view class='item'>
+        <image src='/img/membersel.png'></image>
+        <text class='active'>会员管理</text>
+    </view>
+    <view class='item'>
+        <image src='/img/myshop.png'></image>
+        <text>我的店铺</text>
+    </view>
+</view>

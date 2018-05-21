@@ -1,0 +1,31 @@
+/* pages/pubulish/template/datePlugin/datePlugin.wxss */
+.dateOpt{
+  /* border: 1px solid #5a79ff; */
+  box-shadow:2px 1px 5px 5px rgba(0, 0, 0, .1);
+  flex: none;  
+  display: flex;  
+  background: #fff;
+  border-radius: 4px;  
+}
+.dateOpt .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;
+  color: #b2c1ff; 
+}
+.dateOpt .item.dateAct{
+  color: #5a79ff;
+}
+.dateOpt .item.dateAct:after{
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 40%;  
+  /* right: center;   */
+  /* margin-left: -25%; */
+  height: 4rpx;  
+  width: 20%;
+  background: #5a79ff; 
+}

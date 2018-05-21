@@ -1,0 +1,6 @@
+<!--pages/pubulish/template/datePlugin/datePlugin.wxml-->
+<template name="datePlugin">
+    <view class="dateOpt">
+      <text wx:for="{{dateOpt}}" data-idx="{{index}}" class="item {{currentDate==index ? 'dateAct' : ''}}" bindtap='dateTab' wx:key="unique">{{item}}</text>
+    </view>  
+</template>
