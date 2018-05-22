@@ -6,7 +6,7 @@ Page({
    */ 
   data: {
     navbar: ['会员入店', '回头客入店', '信息查询', '立即注册'],
-    currentTab: 1
+    currentTab: 3
   },
   navbarTap: function (e) {
     this.setData({
@@ -18,6 +18,11 @@ Page({
       url: '../realTimePerformance/guestGroup/guestGroup',
     })
   },
+  memregister: function(){
+     wx.navigateTo({
+       url: '../memRegister/memRegister',
+     })
+  },
   memreception: function(){
     wx.navigateTo({
       url: '../memberReception/memberReception',
@@ -26,6 +31,21 @@ Page({
   memdetail: function(){
     wx.navigateTo({
       url: '../memdetail/memdetail',
+    })
+  },
+  callMe: () =>{
+    wx.makePhoneCall({
+    phoneNumber: '1809090890' 
+    })
+  },
+  toDetail: () =>{
+    wx.navigateTo({
+      url: '../memdetail/memdetail',
+    })
+  },
+  takePic: () =>{
+    wx.navigateTo({
+      url: '../memRegister/memRegister',
     })
   },
   /**

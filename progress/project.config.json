@@ -67,6 +67,12 @@
 					"name": "详情",
 					"pathName": "pages/shopAssistant/memdetail/memdetail",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/shopAssistant/memRegister/memRegister",
+					"query": ""
 				}
 			]
 		}

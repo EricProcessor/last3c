@@ -17,7 +17,8 @@
     "pages/shopAssistant/realTimePerformance/demo/demo",
     "pages/shopAssistant/memberMange/memberMange",
     "pages/shopAssistant/memberReception/memberReception",
-    "pages/shopAssistant/memdetail/memdetail"
+    "pages/shopAssistant/memdetail/memdetail",
+    "pages/shopAssistant/memRegister/memRegister"
   ],
   "window": {
     "backgroundTextStyle": "light",

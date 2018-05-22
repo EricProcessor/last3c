@@ -69,13 +69,114 @@
     </view>
 </view>
 <view class='shopContent' hidden="{{currentTab!==1}}">
-
+    <view class='userPic'>
+        <view class='usericon'>
+            <image src='/img/regis.png'></image>
+            <text>抓拍回头客A</text>
+            <view class='registernow' bindtap='memregister'> 立即注册</view>
+        </view>
+        <view class='snaptime'>
+            <view>抓拍时间:2018-05-15 10:00:11</view>
+            <view>京东之家A店</view>
+        </view>
+    </view>
+    <view class='userPic'>
+        <view class='usericon'>
+            <image src='/img/regis.png'></image>
+            <text>抓拍回头客A</text>
+            <view class='registernow' bindtap='memregister'> 立即注册</view>
+        </view>
+        <view class='snaptime'>
+            <view>抓拍时间:2018-05-15 10:00:11</view>
+            <view>京东之家A店</view>
+        </view>
+    </view>
+    <view class='userPic'>
+        <view class='usericon'>
+            <image src='/img/regis.png'></image>
+            <text>抓拍回头客A</text>
+            <view class='registernow' bindtap='memregister'> 立即注册</view>
+        </view>
+        <view class='snaptime'>
+            <view>抓拍时间:2018-05-15 10:00:11</view>
+            <view>京东之家A店</view>
+        </view>
+    </view>
+    <view class='userPic'>
+        <view class='usericon'>
+            <image src='/img/regis.png'></image>
+            <text>抓拍回头客A</text>
+            <view class='registernow' bindtap='memregister'> 立即注册</view>
+        </view>
+        <view class='snaptime'>
+            <view>抓拍时间:2018-05-15 10:00:11</view>
+            <view>京东之家A店</view>
+        </view>
+    </view>
 </view>
 <view class='shopContent' hidden="{{currentTab!==2}}">
-信息查询
+  <view class="section">
+    <image src='/img/search.png'></image>
+    <input  placeholder="请输入您要搜索的内容" auto-focus/>
+  </view>
+  <view class='userInfo'>
+      <view>
+          <image class='headicon' src='/img/regis.png'></image>
+      </view>
+      <view class='textInfo'>
+          <text>张三</text>
+          <text>1809090890</text>
+      </view>
+      <view class='phoneAnd'>
+            <image bindtap='callMe' src='/img/phone.png'></image>
+            <image bindtap='toDetail' src='/img/more.png'></image>
+      </view>
+  </view>
+  <view class='userInfo'>
+      <view>
+          <image class='headicon' src='/img/regis.png'></image>
+      </view>
+      <view class='textInfo'>
+          <text>张三</text>
+          <text>1809090890</text>
+      </view>
+      <view class='phoneAnd'>
+            <image bindtap='callMe' src='/img/phone.png'></image>
+            <image bindtap='toDetail' src='/img/more.png'></image>
+      </view>
+  </view>
+  <view class='userInfo'>
+      <view>
+          <image class='headicon' src='/img/regis.png'></image>
+      </view>
+      <view class='textInfo'>
+          <text>张三</text>
+          <text>1809090890</text>
+      </view>
+      <view class='phoneAnd'>
+            <image bindtap='callMe' src='/img/phone.png'></image>
+            <image bindtap='toDetail' src='/img/more.png'></image>
+      </view>
+  </view>
+  <view class='userInfo'>
+      <view>
+          <image class='headicon' src='/img/regis.png'></image>
+      </view>
+      <view class='textInfo'>
+          <text>张三</text>
+          <text>1809090890</text>
+      </view>
+      <view class='phoneAnd'>
+            <image bindtap='callMe' src='/img/phone.png'></image>
+            <image bindtap='toDetail' src='/img/more.png'></image>
+      </view>
+  </view>
 </view>
 <view class='shopContent' hidden="{{currentTab!==3}}">
-立即注册
+  <view class='begisBtn'>
+     <button bindtap='takePic'>拍照注册会员</button>
+     <button>抓拍注册会员</button>
+  </view>
 </view>
 <!-- 底部导航 -->
 <view class='bottomnav'>

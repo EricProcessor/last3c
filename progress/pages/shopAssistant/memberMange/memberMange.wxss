@@ -99,7 +99,7 @@
   border-bottom: 4px solid #f0f0f0;
 }
 .picbox .imgbox{
-  margin-right: 25rpx;
+  margin-right: 15rpx;
 }
 .btngroup view{
   font-size: 34rpx;
@@ -143,4 +143,106 @@ box-shadow:2px 1px 3px 3px rgba(193,193,193, .3);
 }
 .memberList .btngroup .receptionist{
   color: #c1c1c1;
+}
+.usericon image{
+  width: 80px;
+  height: 80px;
+  border: 4px solid #f0f0f0;
+  margin-right: 30rpx;
+  border-radius: 4px;
+}
+.usericon{
+  display: flex;
+}
+.imgbox image{
+  border:4px solid #f0f0f0;
+  border-radius:4px;
+  width:80px;
+  height:80px;
+}
+.imgbox view{
+  text-align:center;
+  width: 88px;
+  font-size:34rpx;
+  color:#666;
+  border-bottom:4px solid #f0f0f0
+}
+.snap{
+  display: flex;
+  margin: 40rpx 0;
+}
+.userPic{
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 20rpx;
+}
+.registernow{
+  width: 80px;
+  background-color: #5a79ff;
+  line-height: 90rpx;
+  color: #fff;
+  height: 90rpx;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow:2px 1px 3px 3px rgba(90,121,255, .3);
+  font-size: 34rpx;
+  margin-left: 20rpx;
+}
+.snaptime{
+  margin-top: 50rpx;
+}
+.snaptime view{
+  font-size: 34rpx;
+  color: #666;
+}
+.section{
+  box-shadow:2px 1px 3px 3px rgba(0, 0, 0, .1);
+  display: flex;
+}
+.section input{
+  height: 90rpx;
+  border-radius: 4px;
+  padding-left: 20rpx
+}
+.section image{
+  width: 25px;
+  height: 25px;
+  margin: 5px 0 0 60px;
+}
+ .userInfo{
+   display: flex; 
+   margin-top: 60rpx;
+   border: 1px solid #f0f0f0;
+   border-radius: 4px;
+   padding: 40rpx 20rpx;
+   justify-content: space-between;
+} 
+.userInfo .headicon{
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.phoneAnd{
+  padding-top: 20rpx;
+}
+.phoneAnd image{
+  width: 40px;
+  height: 40px;
+  box-shadow:1px 1px 1px 3px rgba(0, 0, 0, .1);
+  margin-right: 30rpx;
+  border-radius: 25px;
+}
+.textInfo{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.textInfo text{
+  line-height: 70rpx;
+}
+.begisBtn button{
+  margin-bottom: 30rpx;
+  background: #fff;
+  border: none;
+  box-shadow:1px 1px 1px 1px rgba(0, 0, 0, .1);
 }
