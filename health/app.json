@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/health/index",
+    "pages/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "健身",
+    "navigationBarTextStyle":"light"
+  },
+    "tabBar": {
+      "color": "#a9b7b7",
+      "selectedColor": "#1aad16",
+      "borderStyle": "white",
+      "list": [
+        {
+          "selectedIconPath": "img/indexsel.png",
+          "iconPath": "img/index.png",
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "selectedIconPath": "img/cursorsel.png",
+          "iconPath": "img/cursor.png",
+          "pagePath": "pages/logs/logs",
+          "text": "约课"
+        },
+        {
+          "selectedIconPath": "img/minesel.png",
+          "iconPath": "img/mine.png",
+          "pagePath": "pages/mine/mine",
+          "text": "我的"
+        }
+      ]
+    }
+}

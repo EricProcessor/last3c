@@ -1,0 +1,18 @@
+<!--pages/health/index.wxml-->
+<view class="container">
+  <view class="page-section page-section-spacing swiper">
+    <swiper
+      indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{imgs}}" wx:key="*this">
+        <swiper-item>
+          <!-- <view class="swiper-item {{item}}"></view> -->
+          <image class='swiper-item' src="../../{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class='container'>
+    
+</view>

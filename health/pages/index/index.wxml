@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="page-section page-section-spacing swiper">
+    <swiper
+      indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{imgs}}" wx:key="*this">
+        <swiper-item>
+          <!-- <view class="swiper-item {{item}}"></view> -->
+          <image class='swiper-item' src="../../{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class='container padtop20'>
+    <view class='navTab'>
+        <view class='item'>
+            <image src='../../img/date.png'></image>
+            <text>预约课程</text>
+        </view>
+        <view class='item'>
+            <image src='../../img/master.png'></image>
+            <text>教练</text>
+        </view>
+    </view>   
+</view>
