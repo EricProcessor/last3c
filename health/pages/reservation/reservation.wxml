@@ -1,0 +1,22 @@
+<!--pages/reservation/reservation.wxml-->
+<view class='container'>
+  <view class='weui-flex borderR'>
+      <view>
+        <view class="placeholder ">老师</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="weui-cell__bd placeholder borderL"role=""aria-label="">全部</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"role=""aria-label=""></view>
+  </view>
+</view>
+<view class='container'>
+    <view class="weui-flex week_font borderbo">
+        <block wx:for="{{hday}}" wx:key="index">
+            <view class="weui-flex__item {{ currentData==index ? 'dayAct' :'' }}"  data-index="{{index}}"  bindtap="selDay">
+                <view class="">{{item[0]}}</view>
+                <view class="">{{item[1]}}</view>
+            </view>
+        </block>
+        </view>
+</view>
