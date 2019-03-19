@@ -27,3 +27,20 @@
   background-color: #1aad19;
   color: #fff;
 }
+.courseBox{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.courseBox image{
+  /* width: 100rpx;
+  height:  */
+  width: 150rpx;
+  height: 150rpx;
+}
+.courseBox .c-info{
+  display: flex;
+  flex-direction: column;
+}
+.c-info text{
+}

@@ -20,3 +20,18 @@
         </block>
         </view>
 </view>
+<view class='container'>
+    <view class='courseBox'>
+      <view>
+          <image src='../../img/jiaolian.jpeg'></image>
+      </view>
+      <view class='c-info'>
+          <text>王教练</text>
+          <text>时间13:00-15:00</text>
+          <text>预约人数:5</text>
+      </view> 
+      <view>
+          <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button>
+      </view>
+    </view>
+</view>
