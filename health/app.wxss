@@ -6,3 +6,6 @@
 .padtop20{
   padding-top: 20rpx;
 }
+page{
+    background-color: #F8F8F8;
+}
